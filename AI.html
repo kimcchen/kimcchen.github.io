@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Inspired Page</title>
+    <style>
+        /* Body styles */
+        body {
+            background-color: #202A44; /* Navy Blue */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header styles */
+        header {
+            margin-top: 20px; /* Adjust margin to move header up */
+        }
+
+        /* Main content styles */
+        .container {
+            background-color: #F5F2E3; /* Slightly Yellowish Cream */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Heading styles */
+        h1 {
+            color: white; /* White title color */
+            font-size: 24px; /* Adjust font size */
+            animation: bounce-letters 1s ease-in-out infinite; /* Animation */
+        }
+
+        /* Animation for bouncing letters */
+        @keyframes bounce-letters {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Pac-Man element */
+        .pacman {
+            width: 80px;
+            height: 80px;
+            background-color: yellow; /* Yellow color for Pac-Man */
+            border-radius: 50%;
+            position: relative;
+            animation: eat-dots 0.5s linear infinite;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding-right: 30px;
+        }
+
+        /* Pac-Man eye */
+        .eye {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        /* Animation for Pac-Man */
+        @keyframes eat-dots {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(135deg);
+            }
+        }
+
+        /* Dots in the game */
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        /* Red ghost */
+        .red-dot {
+            background-color: red;
+        }
+
+        /* Pink ghost */
+        .pink-dot {
+            background-color: pink;
+        }
+
+        /* Cyan ghost */
+        .cyan-dot {
+            background-color: cyan;
+        }
+
+        /* Orange ghost */
+        .orange-dot {
+            background-color: orange;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #202A44; /* Navy Blue */
+            text-align: center;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Textbox in top right corner */
+        .textbox {
+            position: absolute;
+            top: 50px;
+            /* right: 20px;  */
+            background-color: #F5F2E3; /* Slightly Yellowish Cream */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            width: 300px;
+            color: #202A44;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pac-Man Inspired Page</h1> <!-- Moved title to the top of the page -->
+    </header>
+    <!-- Textbox in top right corner -->
+    <div class="textbox">
+        <p>Final Prompt: Can you make the letters in the title bounce animatedly?</p>
+    </div>
+    <div class="container">
+        <div class="pacman">
+            <!-- Pac-Man eye -->
+            <div class="eye"></div>
+        </div>
+        <!-- Dots in the game -->
+        <div class="dot red-dot" style="top: 40px; left: 100px;"></div>
+        <div class="dot pink-dot" style="top: 80px; left: 180px;"></div>
+        <div class="dot cyan-dot" style="top: 140px; left: 50px;"></div>
+        <div class="dot orange-dot" style="top: 180px; left: 220px;"></div>
+        <div class="dot red-dot" style="top: 260px; left: 120px;"></div>
+        <!-- Add more dots as needed -->
+
+        
+    </div>
+    <footer>
+        &copy; 2023 Pac-Man Inspired Page
+    </footer>
+</body>
+</html>
